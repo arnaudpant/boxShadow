@@ -25,7 +25,7 @@ const ShadowColorPicker = ({ inputData, shadowID}) => {
                 className="flex-grow border py-1 px-2 focus:outline-1 outline-gray-300"
             />
             <input
-                className="cursor-pointer h-[40px ]"
+                className="cursor-pointer h-[40px] w-[40px] ml-4"
                 type="color"
                 value={inputData.value}
                 onChange={handleInputs}
