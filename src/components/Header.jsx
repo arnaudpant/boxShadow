@@ -7,7 +7,7 @@ const Header = () => {
         <header className=" relative p-4 border-b-2 border-gray-200">
             <div className="absolute ">
                 <Link to="https://kallavero.fr">
-                    <AiFillHome className="text-[#F6F6F6] text-xl mt-1 cursor-pointer" />
+                    <AiFillHome className="text-[#F6F6F6] text-3xl cursor-pointer" />
                 </Link>
             </div>
 
