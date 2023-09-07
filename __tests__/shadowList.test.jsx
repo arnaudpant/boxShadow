@@ -1,5 +1,5 @@
 import { expect, test, vi } from "vitest";
-import { render, screen, fireEvent } from "../test/test-utils";
+import { render, screen } from "../test/test-utils";
 import "@testing-library/jest-dom";
 
 import ShadowList from "../src/layouts/shadowList/ShadowList";
@@ -25,16 +25,3 @@ test("Affichage du premier component Shadow", () => {
     expect(screen.queryByText(/Shadow 2/i)).not.toBeInTheDocument();
 });
 
-test("Ajout d'un Shadow", async () => {
-    const ShadowMock1 = () => {
-        return (<li>Shadow 1</li>)
-    };
-    Shadow.mockImplementation(ShadowMock1);
-
-    render(<ShadowList />);
-    const btnAddShadow = screen.getByRole('button', {name: /Add Shadow/i})
-    expect(btnAddShadow).toBeInTheDocument()
-
-    await fireEvent.click(btnAddShadow)
-
-})

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className=" relative p-4 border-b-2 border-gray-200">
+        <header className=" relative p-4 border-b-2 border-gray-200 shadow-sm">
             <div className="absolute ">
                 <Link to="https://kallavero.fr">
                     <AiFillHome className="text-[#F6F6F6] text-3xl cursor-pointer" />
